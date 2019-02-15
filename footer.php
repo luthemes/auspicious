@@ -1,12 +1,12 @@
 <?php
 /**
- * Initiator (footer.php)
+ * Auspicious (footer.php)
  *
  * The (footer.php) template file contains all of the codes that will render in the footer. This file is a template partial,
  * which uses get_footer(); to render only the footer and should not include any contents.
  *
- * @package     Initiator Starter Theme
- * @copyright   Copyright (C) 2018. Benjamin Lu
+ * @package     Auspicious
+ * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later (https://www.gnu.org/licenses/gpl-2.0.html)
  * @author      Benjamin Lu (https://getbenonit.com)
  */
