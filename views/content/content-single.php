@@ -15,10 +15,8 @@
 	<?php Benlumia007\Backdrop\Entry\display( 'entry-post-thumbnail' ); ?>
 	<header class="entry-header">
 		<?php Benlumia007\Backdrop\Entry\display( 'entry-title' ); ?>
+		<span class="entry-metadata"><?php Benlumia007\Backdrop\Entry\display( 'entry-posted-on' ); ?></span>
 	</header>
-	<div class="entry-metadata">
-		<?php Benlumia007\Backdrop\Entry\display( 'entry-posted-on' ); ?>
-	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
