@@ -82,9 +82,9 @@ function load_theme_setup() {
 	 */
 	register_nav_menus(
 		array(
-			'primary'   => esc_html__( 'Primary Navigation', 'backdrop' ),
-			'secondary' => esc_html__( 'Secondary Navigation', 'backdrop' ),
-			'social'    => esc_html__( 'Social Navigation', 'backdrop' ),
+			'primary'   => esc_html__( 'Primary Navigation', 'auspicious' ),
+			'secondary' => esc_html__( 'Secondary Navigation', 'auspicious' ),
+			'social'    => esc_html__( 'Social Navigation', 'auspicious' ),
 		)
 	);
 }

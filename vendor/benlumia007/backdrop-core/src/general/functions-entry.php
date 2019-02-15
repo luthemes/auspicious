@@ -49,24 +49,24 @@ function display( $feature = '' ) {
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_attr(
 				// Translators: 1 = get the author.
-				sprintf( __( 'View all posts by %s', 'backdrop' ), get_the_author() )
+				sprintf( __( 'View all posts by %s', 'auspicious' ), get_the_author() )
 			),
 			get_the_author()
 		);
 		printf(
 			'<span class="by-author">%1$s %2$s %3$s </span><span class="published">%4$s</span>',
-			esc_html__( 'Written by ', 'backdrop' ),
+			esc_html__( 'Written by ', 'auspicious' ),
 			$author, //phpcs:ignore
-			esc_html__( 'on', 'backdrop' ),
+			esc_html__( 'on', 'auspicious' ),
 			$date //phpcs:ignore
 		);
 	} elseif ( 'entry-title' === $feature ) {
 		if ( is_404() ) { ?>
-			<h1 class="entry-title"><?php esc_html_e( 'Whoa! You broke something', 'backdrop' ); ?></h1>
+			<h1 class="entry-title"><?php esc_html_e( 'Whoa! You broke something', 'auspicious' ); ?></h1>
 			<?php
 		} elseif ( is_search() ) {
 			?>
-			<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'backdrop' ); ?></h1>
+			<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'auspicious' ); ?></h1>
 			<?php
 		} elseif ( is_single() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -76,19 +76,19 @@ function display( $feature = '' ) {
 			the_title( sprintf( '<h1 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h1>' );
 		}
 	} elseif ( 'entry-taxonomies' === $feature ) {
-		$cat_list = get_the_category_list( esc_html__( ' | ', 'backdrop' ) );
-		$tag_list = get_the_tag_list( '', esc_html__( ' | ', 'backdrop' ) );
+		$cat_list = get_the_category_list( esc_html__( ' | ', 'auspicious' ) );
+		$tag_list = get_the_tag_list( '', esc_html__( ' | ', 'auspicious' ) );
 		if ( $cat_list ) {
 			printf(
 				'<div class="cat-link"><i class="fa fa-folder-open-o"></i> %1$s <span class="cat-list"l><b><i>%2$s</i></b></span></div>',
-				esc_html__( ' Posted In', 'backdrop' ),
+				esc_html__( ' Posted In', 'auspicious' ),
 				$cat_list
 			); // WPCS XSS OK.
 		}
 		if ( $tag_list ) {
 			printf(
 				'<div class="tag-link"><i class="fa fa-tags"></i> %1$s <span class="tag-list"><b><i>%2$s</i></b></span></div>',
-				esc_html__( ' Tagged', 'backdrop' ),
+				esc_html__( ' Tagged', 'auspicious' ),
 				$tag_list
 			); // WPCS XSS OK.
 		}

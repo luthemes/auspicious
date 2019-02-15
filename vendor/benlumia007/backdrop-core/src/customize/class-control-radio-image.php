@@ -96,7 +96,7 @@ function load_theme_layout_selector( $wp_customize ) {
 	$wp_customize->add_panel(
 		'general_layouts',
 		array(
-			'title'    => esc_html__( 'General Layouts', 'backdrop' ),
+			'title'    => esc_html__( 'General Layouts', 'auspicious' ),
 			'priority' => 10,
 		)
 	);
@@ -104,7 +104,7 @@ function load_theme_layout_selector( $wp_customize ) {
 	$wp_customize->add_section(
 		'global_layout',
 		array(
-			'title'    => esc_html__( 'General Layout', 'backdrop' ),
+			'title'    => esc_html__( 'General Layout', 'auspicious' ),
 			'panel'    => 'general_layouts',
 			'priority' => 5,
 		)
@@ -125,8 +125,8 @@ function load_theme_layout_selector( $wp_customize ) {
 			$wp_customize,
 			'global_layout',
 			array(
-				'label'       => esc_html__( 'General Layout', 'backdrop' ),
-				'description' => esc_html__( 'General Layout applies to all layouts that supports in this theme.', 'backdrop' ),
+				'label'       => esc_html__( 'General Layout', 'auspicious' ),
+				'description' => esc_html__( 'General Layout applies to all layouts that supports in this theme.', 'auspicious' ),
 				'section'     => 'global_layout',
 				'settings'    => 'global_layout',
 				'type'        => 'radio-image',
