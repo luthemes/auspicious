@@ -54,7 +54,7 @@ function display( $feature = '' ) {
 			get_the_author()
 		);
 		printf(
-			'<span class="by-author">%1$s %2$s </span><span class="published">%4$s</span>',
+			'<span class="by-author">%1$s %2$s %3$s </span><span class="published">%4$s</span>',
 			esc_html__( 'Written by ', 'backdrop' ),
 			$author, //phpcs:ignore
 			esc_html__( 'on', 'backdrop' ),

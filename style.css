@@ -983,6 +983,22 @@ a:focus {
 	padding: 0;
 }
 
+.content-area .post .entry-taxonomies .cat-link,
+.content-area .post .entry-taxonomies .tag-link {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.content-area .post .entry-taxonomies .tag-link .fa-tags {
+	margin: 0;
+}
+
+.content-area .post .entry-taxonomies .tag-list,
+.content-area .post .entry-taxonomies .cat-list {
+	font-size: 12px;
+}
+
 /**
  * 18.0 - Content (Comments)
  */
