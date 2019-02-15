@@ -16,7 +16,7 @@
 ?>
 <?php get_header(); ?>
 	<section id="main" class="site-main">
-		<div class="content-area grid">
+		<div class="content-area">
 			<?php Benlumia007\Backdrop\MainQuery\display( 'content-post-format' ); ?>
 		</div>
 	</section>
