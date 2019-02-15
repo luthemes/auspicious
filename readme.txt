@@ -1,4 +1,4 @@
-=== Initiator ===
+=== Auspicious ===
 Contributors: benlumia007
 Requires at least: 4.9.6
 Tested up to WordPress.5.0.1
@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: grid-layout, left-sidebar, one-column, right-sidebar, two-columns, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog
 
 == Description ==
-Initiator is  starter theme
+Auspicious is a theme that uses grid system to display its blog in a neat way as possible.
 
 == Installation ==
 1.0 - In your admin panel when logged in, go to Appearance -> Themes and click the Add New button.
