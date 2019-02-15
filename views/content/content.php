@@ -9,7 +9,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'postss' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="post-thumbnail">
 		<?php Benlumia007\Backdrop\Entry\display( 'entry-post-thumbnail' ); ?>
 	</div>
