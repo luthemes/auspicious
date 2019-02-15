@@ -13,7 +13,8 @@
 
 ?>
 	</section>
-	<footer id="footer" class="site-footer">
+</section>
+<footer id="footer" class="site-footer">
 		<div class="site-info">
 			<?php
 				printf(
@@ -34,7 +35,6 @@
 				?>
 		</div>
 	</footer>
-</section>
 <?php wp_footer(); ?>
 </body>
 </html>

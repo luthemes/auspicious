@@ -744,6 +744,7 @@ a:focus {
  * 11.0 - Navigation (Pagination)
  */
  .pagination {
+	margin: 1.125em 0;
     text-align: center;
 }
 
@@ -903,6 +904,22 @@ a:focus {
 /**
  * 16.0 - Basic Structure (Footer)
  */
+ .site-footer {
+    background: #000000;
+    padding: 1.125em;
+    text-align: center;
+}
+
+.site-footer,
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-info {
+    font-size: 0.875em;
+    line-height: 1.5em;
+}
 
 /**
  * 17.0 - Content (Posts and Pages)
