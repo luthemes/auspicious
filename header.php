@@ -1,12 +1,12 @@
 <?php
 /**
- * Initiator (index.php)
+ * Auspicious (header.php)
  *
  * The (header.php) template file contains all of the codes that will render in the header. This file is a template partial,
  * which uses get_header(); to render only the header and should not include any contents.
  *
- * @package     Initiator Starter Theme
- * @copyright   Copyright (C) 2018. Benjamin Lu
+ * @package     Auspicious
+ * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later (https://www.gnu.org/licenses/gpl-2.0.html)
  * @author      Benjamin Lu (https://getbenonit.com)
  */
@@ -18,11 +18,12 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php Benlumia007\Backdrop\Menu\display( 'primary' ); ?>
+<header id="header" class="site-header header-image">
+	<div class="site-branding">
+		<?php Benlumia007\Backdrop\Site\display( 'site-title' ); ?>
+		<?php Benlumia007\Backdrop\Site\display( 'site-description' ); ?>
+	</div>
+</header>
 <section id="container" class="site-container">
-	<header id="header" class="site-header">
-		<div class="site-branding">
-			<?php Benlumia007\Backdrop\Site\display( 'site-title' ); ?>
-			<?php Benlumia007\Backdrop\Site\display( 'site-description' ); ?>
-		</div>
-		<?php Benlumia007\Backdrop\Menu\display( 'primary' ); ?>
 	<section id="content" class="site-content">
