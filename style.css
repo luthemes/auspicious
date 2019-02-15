@@ -550,8 +550,6 @@ figure {
 .site-content:after,
 .site-main:before,
 .site-main:after,
-.content-area.grid:before,
-.content-area.grid:after,
 .post-navigation:before,
 .post-navigation:after,
 .posts-navigation:before,
@@ -909,47 +907,80 @@ a:focus {
 /**
  * 17.0 - Content (Posts and Pages)
  */
-.content-area.grid articles {
+.content-area .outer-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 1.125em;	
+	grid-gap: 1.125em;
 }
 
-.content-area .post {
+.content-area .outer-grid .inner-grid .post {
+	background: #ffffff;
+	border: 0.063em solid #cccccc;
+	padding: 1.125em;
+}
+
+.content-area .outer-grid .inner-grid .has-post-thumbnail {
+	padding-top: 15em;
+    position: relative;
+}
+
+.content-area .outer-grid .inner-grid .has-post-thumbnail .post-thumbnail {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.content-area .outer-grid .inner-grid .post .entry-header {
+	text-align: center;
+}
+
+.content-area .outer-grid .inner-grid .post .entry-header .entry-title {
+	font-size: 1.625em;
+	margin: 0;
+	padding: 0;
+}
+
+.content-area .outer-grid .inner-grid .post .entry-header .entry-metadata {
+	font-size: 0.875em;
+	text-align: center;
+}
+
+.content-area .outer-grid .inner-grid .post .entry-content,
+.content-area .outer-grid .inner-grid .post .entry-excerpt,
+.left-sidebar .content-area .post .entry-content,
+.left-sidebar .content-area .post .entry-excerpt,
+.right-sidebar .content-area .post .entry-content,
+.right-sidebar .content-area .post .entry-excerpt,
+.left-sidebar .content-area .page .entry-content,
+.left-sidebar .content-area .page .entry-excerpt,
+.right-sidebar .content-area .page .entry-content,
+.right-sidebar .content-area .page .entry-excerpt  {
+	line-height: 1.7em;
+}
+
+.left-sidebar .content-area .post,
+.right-sidebar .content-area .post,
+.left-sidebar .content-area .page,
+.right-sidebar .content-area .page {
 	background: #ffffff;
 	border: 0.063em solid #cccccc;
 	margin-bottom: 1.125em;
 	padding: 1.125em;
 }
 
-.content-area .has-post-thumbnail {
-	padding-top: 15em;
-    position: relative;
+.left-sidebar .content-area .post .entry-header,
+.right-sidebar .content-area .post .entry-header,
+.left-sidebar .content-area .page .entry-header,
+.right-sidebar .content-area .page .entry-header {
+	text-align: center; 	
 }
 
-.content-area .has-post-thumbnail .post-thumbnail {
-	left: 0;
-	position: absolute;
-	top: 0;
-}
-
-.content-area .post .entry-header {
-	text-align: center;
-}
-
-.content-area .post .entry-header .entry-title {
+.left-sidebar .content-area .post .entry-header .entry-title,
+.right-sidebar .content-area .post .entry-header .entry-title,
+.left-sidebar .content-area .page .entry-header .entry-title,
+.right-sidebar .content-area .page .entry-header .entry-title {
 	margin: 0;
 	padding: 0;
-}
-
-.content-area .post .entry-header .entry-metadata {
-	font-size: 0.875em;
-	text-align: center;
-}
-
-.content-area .post .entry-content,
-.content-area .post .entry-excerpt {
-	line-height: 1.7em;
 }
 
 /**
