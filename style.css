@@ -1299,6 +1299,23 @@ p.comment-awaiting-moderation {
 /**
  * 19.0 - Content (Archives)
  */
+.archive-header {
+	background: #ffffff;
+	border: 0.063em solid #cccccc;
+	margin-bottom: 1.125em;
+	padding: 1.125em;
+	text-align: center;
+}
+
+.archive-header .archive-title {
+	margin: 0;
+	padding: 0;
+}
+
+.archive-header .archive-description {
+	display: block;
+	font-size: 0.5em;
+}
 
 /**
  * 20.0 - Content (Search and 404)
