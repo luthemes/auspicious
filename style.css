@@ -1020,6 +1020,31 @@ a:focus {
 	
 }
 
+.custom-blog {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.blog-items {
+	background: #ffffff;
+	border: 0.063em solid #cccccc;
+	padding: 1.125em;
+}
+
+.blog-items .recent-header {
+	text-align: center;
+}
+
+.blog-items .recent-header .recent-title {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-items .entry-excerpt {
+	line-height: 1.7em;
+}
+
 /**
  * 18.0 - Content (Comments)
  */
