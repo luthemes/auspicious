@@ -487,6 +487,11 @@ figure {
     margin: 0;
 }
 
+pre {
+	background: #eeeeee;
+	padding: 1.125em;
+}
+
 /**
  *  4.0 - Forms
  */
