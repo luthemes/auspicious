@@ -1881,6 +1881,12 @@ p.comment-awaiting-moderation {
  * 30.0 - Media Queries (Tablet Large 64em (1024px))
  */
  @media screen and (min-width: 48.063em) and (max-width: 64em) {
+	.site-container {
+		margin: 0;
+		max-width: 64em;
+		padding: 1.125em;
+	}
+
     .primary-navigation {
         clear: none;
         float: left;
