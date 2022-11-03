@@ -1656,6 +1656,10 @@ p.comment-awaiting-moderation {
  * 25.0 - Media Queries (Mobile Small 30em (480px))
  */
  @media screen and (max-width: 30em) {
+	.site-container {
+		margin: 0;
+	}
+
 	.site-content {
 		padding: 1.125em;
 	}
@@ -1703,6 +1707,10 @@ p.comment-awaiting-moderation {
  * 26.0 - Media Queries (Mobile Small 37.5em (600px))
  */
  @media screen and (min-width: 30.063em) and (max-width: 37.50em) {
+	.site-container {
+		margin: 0;
+	}
+
 	.site-content {
 		padding: 1.125em;
 	}
