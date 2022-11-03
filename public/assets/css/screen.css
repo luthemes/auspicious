@@ -6,7 +6,7 @@ body {
 
 h1 {
   display: block;
-  font-family: var(--font-family-heading, "Fira Sans", serif);
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0.67em 0;
@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   display: block;
-  font-family: var(--font-family-heading, "Fira Sans", serif);
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
   font-size: 2rem;
   font-weight: 700;
   margin: 0.83em 0;
@@ -22,7 +22,7 @@ h2 {
 
 h3 {
   display: block;
-  font-family: var(--font-family-heading, "Fira Sans", serif);
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
   font-size: 1.5rem;
   font-weight: 700;
   margin: 1em 0;
@@ -30,7 +30,7 @@ h3 {
 
 h4 {
   display: block;
-  font-family: var(--font-family-heading, "Fira Sans", serif);
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
   font-size: 1.25rem;
   font-weight: 700;
   margin: 1.33em 0;
@@ -38,7 +38,7 @@ h4 {
 
 h5 {
   display: block;
-  font-family: var(--font-family-heading, "Fira Sans", serif);
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
   font-size: 1.125rem;
   font-weight: 700;
   margin: 1.67em 0;
@@ -46,12 +46,84 @@ h5 {
 
 h6 {
   display: block;
-  font-family: var(--font-family-heading, "Fira Sans", serif);
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
   font-size: 1rem;
   font-weight: 700;
   margin: 2.33em 0;
 }
 
+@media screen and (min-width: 769px) {
+  .primary-menu {
+    background: #000000;
+    padding: 1.125rem;
+  }
+  .primary-menu .menu-toggle {
+    display: none;
+  }
+  .primary-menu .menu-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: static;
+    justify-content: center;
+  }
+  .primary-menu .menu-items .menu-item {
+    left: unset;
+    position: relative;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .primary-menu .menu-items .menu-item.menu-item-has-children > a:after {
+    color: #ffffff;
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }
+  .primary-menu .menu-items .menu-item.current-menu-item a {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .primary-menu .menu-items .menu-item a {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  .primary-menu .menu-items .menu-item .dropdown-toggle {
+    display: none;
+  }
+  .primary-menu .menu-items .menu-item .sub-menu {
+    background: #000000;
+    left: 0;
+    list-style-type: none;
+    margin: 0.7rem 0;
+    opacity: 0;
+    padding: 0.5rem 0;
+    position: absolute;
+    transform: translateY(-1em);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
+  .primary-menu .menu-items .menu-item .sub-menu .menu-item {
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem;
+  }
+  .primary-menu .menu-items .menu-item .sub-menu .menu-item:last-child {
+    margin: 0;
+  }
+  .primary-menu .menu-items .menu-item:hover .sub-menu, .primary-menu .menu-items .menu-item:focus-within .sub-menu, .primary-menu .menu-items .menu-item.focus .sub-menu {
+    left: 0;
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+}
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);

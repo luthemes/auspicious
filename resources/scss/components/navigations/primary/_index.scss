@@ -199,114 +199,99 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
-    .primary-navigation {
-        a {
-            background: transparent;
-            color: #000000;
-        }
-        
-        .nav-menu {
-            display: flex;
-            position: static;
+@media screen and ( min-width: 1025px ) {
+	.primary-menu {
+		background: #000000;
+		padding: 1.125rem;
 
-            li {
-                position: relative;
-                width: max-content;
-                left: unset;
+		.menu-toggle {
+			display: none;
+		}
 
-                a {
-                    padding: 0.75em;
+		.menu-items {
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: static;
+			justify-content: center;
 
-                    &:hover,
-                    &:focus {
-                        background: #ffffff;
-                    }
-                }
+			.menu-item {
+				left: unset;
+				position: relative;
+				width: max-content;
 
-                .sub-menu {
-                    position: absolute;
-                    left: -9999em;
-                    top: 100%;
+				&.menu-item-has-children {
+					> {
+						a {
+							&:after {
+								color: color( white );
+								content: "\f078";
+								font-family: 'Font Awesome 5 Free';
+								text-decoration: none;
+								margin-left: 0.5rem;
+						   }
+						}
+					}
+				}
 
-                    li {
-                        margin-bottom: 0.063em;
-                        position: relative;
-                        width: 20em;
+				&.current-menu-item {
+					a {
+						color: color( white );
+						padding: 0.5rem 1rem;
+						text-decoration: underline;
+						text-decoration-thickness: 2px;
+						text-underline-offset: 4px;
+					}
+				}
 
-                        a {
-                            background: #333333;
-                            color: #ffffff;
+				a {
+					color: color( white );
+					padding: 0.5rem 1rem;
+					text-decoration: none;
+				}
 
-                            &:hover {
-                                background: #444444;
-                            }
-                        }
+				.dropdown-toggle {
+					display: none;
+				}
 
-                        .sub-menu {
-                            left: -9999em;
-                            position: absolute;
-                            top: 0;
+				.sub-menu {
+					background: color( black );
+					left: 0;
+					list-style-type: none;
+					margin: 0.7rem 0;
+					opacity: 0;
+					padding: 0.5rem 0;
+					position: absolute;
+					transform: translateY( -1em );
+					visibility: hidden;
+					transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 
-                            li {
-                                a {
-                                    padding-left: 0.938rem;
-                                }
-                            }
-                        }
+					.menu-item {
+						margin: 0 0 0.5rem 0;
+						padding: 0.5rem;
 
-                        &:hover,
-                        &:focus,
-                        &.focus {
-                            > .sub-menu {
-                                left: 101%;
-                            }
-                        }
-                    }
+						&:last-child {
+							margin: 0;
+						}
+					}
+				}
 
-                    .menu-item-has-children,
-                    .page_item_has_children {
-                        > {
-                            a {
-                                &:after {
-                                    content: "\f054";
-                                    font-family: 'Font Awesome 5 Free';
-                                    position: absolute;
-                                    right: 0.5em;
-                                    top: 50%;
-                                    transform: translate(0, -50%);
-                                }
-                            }
-                        }
-                    }
-                }
+				&:hover,
+				&:focus-within,
+				&.focus {
+					.sub-menu {
+						left: 0;
+						visibility: visible; /* shows sub-menu */
+						opacity: 1;
+						z-index: 1;
+						transform: translateY(0%);
+						transition-delay: 0s, 0s, 0.3s
+					}
+				}
+			}
+		}
 
-                &:hover,
-                &:focus,
-                &.focus {
-                    > .sub-menu {
-                        left: 0;
-                    }
-                }
-            }
 
-            .menu-item-has-children,
-            .page_item_has_children {
-                > {
-                    a {
-                        &:after {
-                            font-family: 'Font Awesome 5 Free';
-                            content: "\f078";
-                            vertical-align: bottom;
-                            margin-left: 0.25em;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    .dropdown-toggle {
-        display: none
-    }
+	}
 }

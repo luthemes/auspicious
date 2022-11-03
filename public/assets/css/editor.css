@@ -52,6 +52,222 @@ h6 {
   margin: 2.33em 0;
 }
 
+.primary-navigation {
+  display: block;
+  margin: 0;
+  /* Styling the Links */
+  /* Hide Submenus by default using absolute positioning instead of display:none;. */
+}
+.primary-navigation .dropdown-toggle {
+  background-color: transparent;
+  border: 0.063em solid transparent;
+  border-left: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 1.1em;
+  position: absolute;
+  right: 0.5em;
+  top: 1em;
+  text-align: center;
+}
+.primary-navigation .dropdown-toggle:hover, .primary-navigation .dropdown-toggle:focus {
+  border: 0.063em dashed;
+}
+.primary-navigation .dropdown-toggle .fontawesome {
+  font-family: "Font Awesome 5 Free";
+}
+.primary-navigation .dropdown-toggle .fontawesome:before {
+  content: "\f078";
+}
+.primary-navigation .toggled-on .dropdown-toggle .fontawesome:before {
+  content: "\f077";
+}
+.primary-navigation a {
+  background: #000000;
+  border-bottom: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  padding: 1.25em 0.75em;
+  text-decoration: none;
+  width: 100%;
+}
+.primary-navigation a:hover, .primary-navigation a:focus {
+  background: #606060;
+}
+.primary-navigation .nav-menu,
+.primary-navigation .nav-menu li,
+.primary-navigation .nav-menu ul,
+.primary-navigation .nav-menu li:hover > ul,
+.primary-navigation .nav-menu li:focus > ul {
+  left: -9999em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+}
+.primary-navigation .nav-menu ul a {
+  background-color: #444444;
+  padding-left: 2em;
+}
+.primary-navigation .nav-menu ul ul a {
+  background: #444444;
+  padding-left: 4em;
+}
+
+/* Styling the Menu Toggle Button */
+.menu-toggle {
+  background: #000000;
+  border: 0.063em solid #ffffff;
+  border-radius: 0.3125em;
+  font-family: var(--font-family-primary, "Merriweather", serif);
+  font-size: 1rem;
+  color: #ffffff;
+  display: none;
+  padding: 0.75em 0.625em 0.625em 0.75em;
+  position: absolute;
+  right: 1em;
+  top: 3em;
+}
+
+.toggled .nav-menu {
+  display: block;
+  left: 1.125em;
+  margin: 2rem 1.125em 0 1.125em 1.125em;
+  right: 1.125em;
+  position: fixed;
+  top: 6em;
+}
+.toggled .nav-menu li {
+  left: unset;
+  position: relative;
+}
+.toggled .nav-menu li > .sub-menu {
+  display: none;
+}
+.toggled .nav-menu .toggled-on > .sub-menu {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 100%;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 30em) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 3.25em;
+  }
+  .toggled .nav-menu {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 30.0625em) and (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 3.25em;
+  }
+  .toggled .nav-menu {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 3.25em;
+  }
+  .toggled .nav-menu {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 2.5em;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .primary-menu {
+    background: #000000;
+    padding: 1.125rem;
+  }
+  .primary-menu .menu-toggle {
+    display: none;
+  }
+  .primary-menu .menu-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: static;
+    justify-content: center;
+  }
+  .primary-menu .menu-items .menu-item {
+    left: unset;
+    position: relative;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .primary-menu .menu-items .menu-item.menu-item-has-children > a:after {
+    color: color(white);
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }
+  .primary-menu .menu-items .menu-item.current-menu-item a {
+    color: color(white);
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .primary-menu .menu-items .menu-item a {
+    color: color(white);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  .primary-menu .menu-items .menu-item .dropdown-toggle {
+    display: none;
+  }
+  .primary-menu .menu-items .menu-item .sub-menu {
+    background: color(black);
+    left: 0;
+    list-style-type: none;
+    margin: 0.7rem 0;
+    opacity: 0;
+    padding: 0.5rem 0;
+    position: absolute;
+    transform: translateY(-1em);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
+  .primary-menu .menu-items .menu-item .sub-menu .menu-item {
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem;
+  }
+  .primary-menu .menu-items .menu-item .sub-menu .menu-item:last-child {
+    margin: 0;
+  }
+  .primary-menu .menu-items .menu-item:hover .sub-menu, .primary-menu .menu-items .menu-item:focus-within .sub-menu, .primary-menu .menu-items .menu-item.focus .sub-menu {
+    left: 0;
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+}
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);

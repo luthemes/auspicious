@@ -14,8 +14,7 @@
 // -----------------------------------------------------------------------------
 //
 // Settings handle the configuration and variables.
-
-@import 'settings/index';
+@import '01.settings/index';
 
 // -----------------------------------------------------------------------------
 // Import tools.
@@ -62,7 +61,8 @@
 // fonts, etc. are best handled here. These are the base styles that other
 // styles will build upon.
 
-@import 'components/index';
+@import '04.components/index';
+// @import 'components/index';
 
 // -----------------------------------------------------------------------------
 // Import block styles.
