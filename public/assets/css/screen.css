@@ -52,6 +52,103 @@ h6 {
   margin: 2.33em 0;
 }
 
+@media screen and (max-width: 768px) {
+  .primary-menu {
+    width: 100%;
+  }
+  .primary-menu .menu-toggle {
+    background: #000000;
+    border: none;
+    bottom: 1.125rem;
+    color: #ffffff;
+    font-family: var(--font-family-primary, "Merriweather", serif);
+    left: 1.125rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+  }
+  .primary-menu .menu-items {
+    background: #000000;
+    left: -9999rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+  .primary-menu .menu-items .menu-item {
+    padding: 0.5rem 1rem;
+  }
+  .primary-menu .menu-items .menu-item a {
+    background: #000000;
+    border-bottom: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    width: 100%;
+  }
+  .primary-menu .menu-items .menu-item a:hover {
+    text-decoration: underline;
+  }
+  .primary-menu .menu-items .menu-item .dropdown-toggle {
+    background: transparent;
+    border-bottom: none;
+    border-left: 0.063rem dashed #ffffff;
+    border-right: none;
+    border-top: none;
+    padding: 0.938rem;
+    position: absolute;
+    right: 0.063rem;
+    top: 0.063rem;
+  }
+  .primary-menu .menu-items .menu-item .dropdown-toggle .fontawesome {
+    color: #ffffff;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.24rem;
+  }
+  .primary-menu .menu-items .menu-item .dropdown-toggle .fontawesome:before {
+    content: "\f077";
+  }
+  .primary-menu .menu-items .menu-item .sub-menu {
+    left: -9999rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+  .primary-menu .menu-items .toggled-on .dropdown-toggle {
+    background: transparent;
+    border-bottom: none;
+    border-left: 0.063rem dashed #ffffff;
+    border-right: none;
+    border-top: none;
+    padding: 0.938rem;
+    position: absolute;
+    right: 0.063rem;
+    top: 0.063rem;
+  }
+  .primary-menu .menu-items .toggled-on .dropdown-toggle .fontawesome {
+    color: #ffffff;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.24rem;
+  }
+  .primary-menu .menu-items .toggled-on .dropdown-toggle .fontawesome:before {
+    content: "\f078";
+  }
+  .primary-menu .menu-items .toggled-on .sub-menu {
+    background: #000000;
+    bottom: 3.4rem;
+    left: 0;
+    right: 0;
+    padding-left: 1rem;
+  }
+  .toggled .primary-menu .menu-items {
+    bottom: 3.6rem;
+    left: 1.125rem;
+    right: 1.125rem;
+    position: fixed;
+  }
+}
 @media screen and (min-width: 769px) {
   .primary-menu {
     background: #000000;
