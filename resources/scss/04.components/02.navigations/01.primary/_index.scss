@@ -119,6 +119,13 @@
 				position: relative;
 				width: max-content;
 
+				&:hover {
+					color: color( white );
+					text-decoration: underline;
+					text-decoration-thickness: 2px;
+					text-underline-offset: 4px;
+				}
+
 				&.menu-item-has-children {
 					> {
 						a {
@@ -140,6 +147,18 @@
 						text-decoration: underline;
 						text-decoration-thickness: 2px;
 						text-underline-offset: 4px;
+					}
+					
+					.sub-menu {
+						.menu-item {
+							a {
+								color: color( white );
+								padding: 0.5rem 1rem;
+								text-decoration: none;
+								text-decoration-thickness: 0;
+								text-underline-offset: 0;
+							}
+						}
 					}
 				}
 

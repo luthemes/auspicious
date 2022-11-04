@@ -84,8 +84,6 @@
 		return;
 	}
 
-
-
 	button.onclick = function() {
 		screenreadertext = this.querySelector( '.screen-reader-text' );
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
@@ -118,7 +116,7 @@
 		var self = this;
 
 		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+		while ( -1 === self.className.indexOf( 'menu-items' ) ) {
 
 			// On li elements toggle the class .focus.
 			if ( 'li' === self.tagName.toLowerCase() ) {

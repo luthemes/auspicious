@@ -154,6 +154,12 @@ h6 {
     width: -moz-max-content;
     width: max-content;
   }
+  .primary-navigation .menu-items .menu-item:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
   .primary-navigation .menu-items .menu-item.menu-item-has-children > a:after {
     color: #ffffff;
     content: "\f078";
@@ -167,6 +173,13 @@ h6 {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
+  }
+  .primary-navigation .menu-items .menu-item.current-menu-item .sub-menu .menu-item a {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    text-decoration-thickness: 0;
+    text-underline-offset: 0;
   }
   .primary-navigation .menu-items .menu-item a {
     color: #ffffff;
