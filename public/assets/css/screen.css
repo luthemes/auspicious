@@ -53,10 +53,7 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .primary-menu {
-    width: 100%;
-  }
-  .primary-menu .menu-toggle {
+  .menu-toggle {
     background: #000000;
     border: none;
     bottom: 1.125rem;
@@ -66,87 +63,46 @@ h6 {
     padding: 0.5rem 1rem;
     position: fixed;
   }
-  .primary-menu .menu-items {
-    background: #000000;
+  .primary-navigation .menu-items {
     left: -9999rem;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     position: absolute;
   }
-  .primary-menu .menu-items .menu-item {
-    padding: 0.5rem 1rem;
-  }
-  .primary-menu .menu-items .menu-item a {
+  .primary-navigation.toggled .menu-items {
     background: #000000;
-    border-bottom: none;
-    box-sizing: border-box;
-    color: #ffffff;
     display: block;
-    padding: 0.5rem 0;
-    text-decoration: none;
-    width: 100%;
+    bottom: 3.5rem;
+    left: 1.25rem;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 1.125rem;
   }
-  .primary-menu .menu-items .menu-item a:hover {
-    text-decoration: underline;
+  .primary-navigation.toggled .menu-items .menu-item {
+    margin: 0.7rem;
+    padding: 0.7rem;
   }
-  .primary-menu .menu-items .menu-item .dropdown-toggle {
-    background: transparent;
-    border-bottom: none;
-    border-left: 0.063rem dashed #ffffff;
-    border-right: none;
-    border-top: none;
-    padding: 0.938rem;
-    position: absolute;
-    right: 0.063rem;
-    top: 0.063rem;
-  }
-  .primary-menu .menu-items .menu-item .dropdown-toggle .fontawesome {
+  .primary-navigation.toggled .menu-items .menu-item a {
     color: #ffffff;
-    font-family: "Font Awesome 5 Free";
-    font-size: 1.24rem;
+    text-decoration: none;
   }
-  .primary-menu .menu-items .menu-item .dropdown-toggle .fontawesome:before {
-    content: "\f077";
-  }
-  .primary-menu .menu-items .menu-item .sub-menu {
-    left: -9999rem;
-    list-style-type: none;
+  .primary-navigation.toggled .menu-items .menu-item .dropdown-toggle {
+    background: transparent;
+    border: none;
     margin: 0;
     padding: 0;
     position: absolute;
+    right: 1.25rem;
   }
-  .primary-menu .menu-items .toggled-on .dropdown-toggle {
-    background: transparent;
-    border-bottom: none;
-    border-left: 0.063rem dashed #ffffff;
-    border-right: none;
-    border-top: none;
-    padding: 0.938rem;
-    position: absolute;
-    right: 0.063rem;
-    top: 0.063rem;
-  }
-  .primary-menu .menu-items .toggled-on .dropdown-toggle .fontawesome {
+  .primary-navigation.toggled .menu-items .menu-item .dropdown-toggle .fontawesome {
     color: #ffffff;
     font-family: "Font Awesome 5 Free";
-    font-size: 1.24rem;
+    font-size: 1.125rem;
   }
-  .primary-menu .menu-items .toggled-on .dropdown-toggle .fontawesome:before {
+  .primary-navigation.toggled .menu-items .menu-item .dropdown-toggle .fontawesome:before {
     content: "\f078";
   }
-  .primary-menu .menu-items .toggled-on .sub-menu {
-    background: #000000;
-    bottom: 3.4rem;
-    left: 0;
-    right: 0;
-    padding-left: 1rem;
-  }
-  .toggled .primary-menu .menu-items {
-    bottom: 3.6rem;
-    left: 1.125rem;
-    right: 1.125rem;
-    position: fixed;
+  .primary-navigation.toggled .menu-items .menu-item .sub-menu {
+    display: none;
   }
 }
 @media screen and (min-width: 769px) {

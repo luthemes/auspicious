@@ -1,122 +1,67 @@
 @media screen and ( max-width: 768px ) {
-	.primary-menu {
+    .menu-toggle {
+        background: color( black );
+        border: none;
+        bottom: 1.125rem;
+        color: color( white );
+        font-family: font-family( primary );
+        left: 1.125rem;
+        padding: 0.5rem 1rem;
+        position: fixed;
+    }
 
-		width: 100%;
-	
-		.menu-toggle {
-			background: color( black );
-			border: none;
-			bottom: 1.125rem;
-			color: color( white );
-			font-family: font-family( primary );
-			left: 1.125rem;
-			padding: 0.5rem 1rem;
-			position: fixed;
-		}
-	
+	.primary-navigation {
 		.menu-items {
-			background: color( black );
 			left: -9999rem;
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
 			position: absolute;
-	
-			.menu-item {
-				padding: 0.5rem 1rem;
-	
-				a {
-					background: #000000;
-					border-bottom: none;
-					box-sizing: border-box;
-					color: #ffffff;
-					display: block;
-					padding: 0.5rem 0;
-					text-decoration: none;
-					width: 100%;
-	
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-	
-				.dropdown-toggle {
-					background: transparent;
-					border-bottom: none;
-					border-left: 0.063rem dashed color( white );
-					border-right: none;
-					border-top: none;
-					padding: 0.938rem;
-					position: absolute;
-					right: 0.063rem;
-					top: 0.063rem;
-	
-					.fontawesome {
+		}
+
+		&.toggled {
+			.menu-items {
+				background: color( black );
+				display: block;
+				bottom: 3.5rem;
+				left: 1.25rem;
+				margin: 0;
+				padding: 0;
+				position: fixed;
+				right: 1.125rem;
+
+				.menu-item {
+					margin: 0.7rem;
+					padding: 0.7rem;
+
+					a {
 						color: color( white );
-						font-family: 'Font Awesome 5 Free';
-						font-size: 1.24rem;
-	
-						&:before {
-							content: "\f077";
+						text-decoration: none;
+					}
+
+					.dropdown-toggle {
+						background: transparent;
+						border: none;
+						margin: 0;
+						padding: 0;
+						position: absolute;
+						right: 1.250rem;
+		
+						.fontawesome {
+							color: color( white );
+							font-family: 'Font Awesome 5 Free';
+							font-size: 1.125rem;
+		
+							&:before {
+								content: "\f078";
+							}
 						}
 					}
-				}
-	
-				.sub-menu {
-					left: -9999rem;
-					list-style-type: none;
-					margin: 0;
-					padding: 0;
-					position: absolute;
-				}
-			}
-	
-			.toggled-on {
-				.dropdown-toggle {
-					background: transparent;
-					border-bottom: none;
-					border-left: 0.063rem dashed color( white );
-					border-right: none;
-					border-top: none;
-					padding: 0.938rem;
-					position: absolute;
-					right: 0.063rem;
-					top: 0.063rem;
-	
-					.fontawesome {
-						color: color( white );
-						font-family: 'Font Awesome 5 Free';
-						font-size: 1.24rem;
-	
-						&:before {
-							content: "\f078";
-						}
+
+					.sub-menu {
+						display: none;
 					}
 				}
-	
-				.sub-menu {
-					background: color( black );
-					bottom: 3.4rem;
-					left: 0;
-					right: 0;
-					padding-left: 1rem;
-				}
-			}
+            }
 		}
 	}
-	
-	.toggled {
-		.primary-menu {
-			.menu-items {
-				bottom: 3.6rem;
-				left: 1.125rem;
-				right: 1.125rem;
-				position: fixed;
-	
-	
-			}
-		}
-	} 
 }
 
 @media screen and ( min-width: 769px ) {

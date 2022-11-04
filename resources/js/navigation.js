@@ -22,7 +22,7 @@
  ( function( $ ) {
 	var container, button, dropdown, icon, screenreadertext, parentLink, menu, submenu, links, i, len;
 
-	container = document.getElementById( 'masthead' );
+	container = document.getElementById( 'primaire' );
 	if ( ! container ) {
 		return;
 	}
@@ -32,7 +32,7 @@
 		return;
 	}
 
-	menu = container.getElementsByTagName( 'nav' )[0];
+	menu = container.getElementsByTagName( 'ul' )[0];
 
 	screenreadertext = document.createElement( 'span' );
 	screenreadertext.classList.add( 'screen-reader-text' );
@@ -84,10 +84,7 @@
 		return;
 	}
 
-	menu.setAttribute( 'aria-expanded', 'false' );
-		if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-			menu.className += ' nav-menu';
-		}
+
 
 	button.onclick = function() {
 		screenreadertext = this.querySelector( '.screen-reader-text' );
