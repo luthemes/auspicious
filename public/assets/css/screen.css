@@ -102,18 +102,45 @@ h6 {
     content: "\f078";
   }
   .primary-navigation.toggled .menu-items .menu-item .sub-menu {
-    display: none;
+    left: -9999rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+  .primary-navigation.toggled .menu-items .menu-item.toggled-on .dropdown-toggle {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 1.25rem;
+  }
+  .primary-navigation.toggled .menu-items .menu-item.toggled-on .dropdown-toggle .fontawesome {
+    color: #ffffff;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.25rem;
+  }
+  .primary-navigation.toggled .menu-items .menu-item.toggled-on .dropdown-toggle .fontawesome:before {
+    content: "\f077";
+  }
+  .primary-navigation.toggled .menu-items .menu-item.toggled-on .sub-menu {
+    background: transparent;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    position: relative;
   }
 }
 @media screen and (min-width: 769px) {
-  .primary-menu {
+  .primary-navigation {
     background: #000000;
     padding: 1.125rem;
   }
-  .primary-menu .menu-toggle {
+  .primary-navigation .menu-toggle {
     display: none;
   }
-  .primary-menu .menu-items {
+  .primary-navigation .menu-items {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -121,35 +148,35 @@ h6 {
     position: static;
     justify-content: center;
   }
-  .primary-menu .menu-items .menu-item {
+  .primary-navigation .menu-items .menu-item {
     left: unset;
     position: relative;
     width: -moz-max-content;
     width: max-content;
   }
-  .primary-menu .menu-items .menu-item.menu-item-has-children > a:after {
+  .primary-navigation .menu-items .menu-item.menu-item-has-children > a:after {
     color: #ffffff;
     content: "\f078";
     font-family: "Font Awesome 5 Free";
     text-decoration: none;
     margin-left: 0.5rem;
   }
-  .primary-menu .menu-items .menu-item.current-menu-item a {
+  .primary-navigation .menu-items .menu-item.current-menu-item a {
     color: #ffffff;
     padding: 0.5rem 1rem;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
-  .primary-menu .menu-items .menu-item a {
+  .primary-navigation .menu-items .menu-item a {
     color: #ffffff;
     padding: 0.5rem 1rem;
     text-decoration: none;
   }
-  .primary-menu .menu-items .menu-item .dropdown-toggle {
+  .primary-navigation .menu-items .menu-item .dropdown-toggle {
     display: none;
   }
-  .primary-menu .menu-items .menu-item .sub-menu {
+  .primary-navigation .menu-items .menu-item .sub-menu {
     background: #000000;
     left: 0;
     list-style-type: none;
@@ -161,14 +188,14 @@ h6 {
     visibility: hidden;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   }
-  .primary-menu .menu-items .menu-item .sub-menu .menu-item {
+  .primary-navigation .menu-items .menu-item .sub-menu .menu-item {
     margin: 0 0 0.5rem 0;
     padding: 0.5rem;
   }
-  .primary-menu .menu-items .menu-item .sub-menu .menu-item:last-child {
+  .primary-navigation .menu-items .menu-item .sub-menu .menu-item:last-child {
     margin: 0;
   }
-  .primary-menu .menu-items .menu-item:hover .sub-menu, .primary-menu .menu-items .menu-item:focus-within .sub-menu, .primary-menu .menu-items .menu-item.focus .sub-menu {
+  .primary-navigation .menu-items .menu-item:hover .sub-menu, .primary-navigation .menu-items .menu-item:focus-within .sub-menu, .primary-navigation .menu-items .menu-item.focus .sub-menu {
     left: 0;
     visibility: visible; /* shows sub-menu */
     opacity: 1;

@@ -56,7 +56,40 @@
 					}
 
 					.sub-menu {
-						display: none;
+						left: -9999rem;
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						position: absolute;
+					}
+
+					&.toggled-on {
+						.dropdown-toggle {
+							background: transparent;
+							border: none;
+							margin: 0;
+							padding: 0;
+							position: absolute;
+							right: 1.250rem;
+			
+							.fontawesome {
+								color: color( white );
+								font-family: 'Font Awesome 5 Free';
+								font-size: 1.25rem;
+			
+								&:before {
+									content: "\f077";
+								}
+							}
+						}
+			
+						.sub-menu {
+							background: transparent;
+							left: 0;
+							right: 0;
+							padding-left: 0;
+							position: relative;
+						}
 					}
 				}
             }
@@ -65,7 +98,7 @@
 }
 
 @media screen and ( min-width: 769px ) {
-	.primary-menu {
+	.primary-navigation {
 		background: color( black );
 		padding: 1.125rem;
 
