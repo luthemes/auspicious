@@ -20,9 +20,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="masthead" class="primary-navigation">
-	<?php Benlumia007\Backdrop\Theme\Menu\display( 'menu', [ 'primary' ] ); ?>
-</div>
+<?php Benlumia007\Backdrop\Theme\Menu\display( 'menu', [ 'primary' ] ); ?>
 <header id="header" class="site-header header-image">
 	<div class="site-branding">
 		<?php Benlumia007\Backdrop\Theme\Site\display_site_title(); ?>
