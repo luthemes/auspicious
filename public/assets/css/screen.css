@@ -271,6 +271,10 @@ h6 {
     margin: 0;
     padding: 0;
   }
+  .blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-title a {
+    color: #000000;
+    text-decoration: none;
+  }
   .blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-metadata {
     font-size: 0.875rem;
   }
@@ -278,7 +282,7 @@ h6 {
     padding-right: 0.25rem;
   }
   .blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-metadata .fa-calendar-alt,
-.blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-metadata .fa-comment {
+  .blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-metadata .fa-comment {
     padding-left: 0.5rem;
     padding-right: 0.25rem;
   }
