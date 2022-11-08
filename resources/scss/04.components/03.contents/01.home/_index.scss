@@ -1,0 +1,49 @@
+@media screen and ( min-width: 73.125rem ) {
+	.blog {
+		.site-content {
+			margin: 1.125rem auto;
+			max-width: 1170px;
+
+			.no-sidebar {
+				.content-area {
+					.loop {
+						display: grid;
+						grid-template-columns: 1fr 1fr 1fr;
+						grid-gap: 1.125em;
+						line-height: 1.8rem;
+	
+						.post {
+							background: #ffffff;
+							border: 0.063em solid #cccccc;
+							padding: 1.125em;
+	
+							.entry-header {
+								text-align: center;
+	
+								.entry-title {
+									font-size: 1.75rem;
+									margin: 0;
+									padding: 0;
+								}
+	
+								.entry-metadata {
+									font-size: 0.875rem;
+
+									.fa-user {
+										padding-right: 0.250rem;
+									}
+
+									.fa-calendar-alt,
+									.fa-comment {
+										padding-left: 0.5rem;
+										padding-right: 0.250rem;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -12,7 +12,6 @@
  */
 
 ?>
-	</section>
 </section>
 <div id="secondary" class="secondary-navigation">
 	<?php Benlumia007\Backdrop\Theme\Menu\display( 'secondary' ); ?>

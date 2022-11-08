@@ -15,11 +15,13 @@
 		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
 				<?php
-					if ( have_posts() ) :
-						while ( have_posts() ) : the_post();
-							$engine->display( 'content', get_post_format()  );
-						endwhile;
-						the_posts_pagination();
+					if ( have_posts() ) : ?>
+						<div class="loop">
+							<?php while ( have_posts() ) : the_post();
+									$engine->display( 'content', get_post_format()  );
+							endwhile; ?>
+						</div>
+						<?php the_posts_pagination();
 					else :
 							$engine->display( 'content/none' );
 					endif;

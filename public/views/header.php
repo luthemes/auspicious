@@ -28,4 +28,3 @@
 	</div>
 </header>
 <section id="container" class="site-container">
-	<section id="content" class="site-content">
