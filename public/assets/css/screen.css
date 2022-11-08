@@ -282,7 +282,7 @@ h6 {
     padding-right: 0.25rem;
   }
   .blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-metadata .fa-calendar-alt,
-  .blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-metadata .fa-comment {
+.blog .site-content .no-sidebar .content-area .loop .post .entry-header .entry-metadata .fa-comment {
     padding-left: 0.5rem;
     padding-right: 0.25rem;
   }

@@ -1,0 +1,36 @@
+@media screen and ( min-width: 73.125rem ) {
+	.page {
+		.content-area {
+			line-height: 1.8rem;
+			
+			.page {
+				background: #ffffff;
+				border: 0.063em solid #cccccc;
+				padding: 1.125em;
+
+				.entry-header {
+					text-align: center;
+
+					.entry-title {
+						margin: 0;
+						padding: 0;
+					}
+
+					.entry-metadata {
+						font-size: 0.875rem;
+
+						.fa-user {
+							padding-right: 0.250rem;
+						}
+
+						.fa-calendar-alt,
+						.fa-comment {
+							padding-left: 0.5rem;
+							padding-right: 0.250rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

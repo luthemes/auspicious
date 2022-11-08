@@ -30,7 +30,7 @@ $auspicious->provider( Benlumia007\Backdrop\Template\View\Provider::class );
  * Register custom providers for the theme.
  */
 $auspicious->provider( Auspicious\Menu\Provider::class );
-// $auspicious->provider( auspicious\Sidebar\Provider::class );
+$auspicious->provider( Auspicious\Sidebar\Provider::class );
 
 /**
  * Create an action hook for child themes.
