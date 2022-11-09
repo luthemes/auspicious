@@ -18,11 +18,10 @@ const rimraf  = require( 'rimraf' );
 const fs      = require( 'fs' );
 
 // Folder name to export the files to.
-let exportPath = 'initiator';
+let exportPath = 'auspicious';
 
 // Theme root-level files to include.
 let files = [
-	'changelog.md',
 	'functions.php',
 	'index.php',
 	'readme.txt',
