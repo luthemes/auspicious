@@ -298,7 +298,7 @@ h6 {
     padding-right: 0.25rem;
   }
   .blog .site-content .content-area .loop .post .entry-header .entry-metadata .fa-calendar-alt,
-.blog .site-content .content-area .loop .post .entry-header .entry-metadata .fa-comment {
+  .blog .site-content .content-area .loop .post .entry-header .entry-metadata .fa-comment {
     padding-left: 0.5rem;
     padding-right: 0.25rem;
   }
@@ -326,7 +326,7 @@ h6 {
     padding-right: 0.25rem;
   }
   .page .content-area .page .entry-header .entry-metadata .fa-calendar-alt,
-.page .content-area .page .entry-header .entry-metadata .fa-comment {
+  .page .content-area .page .entry-header .entry-metadata .fa-comment {
     padding-left: 0.5rem;
     padding-right: 0.25rem;
   }
@@ -340,51 +340,38 @@ h6 {
 .widget:first-child {
   margin-top: 0;
 }
-
 .widget .widget-title {
   margin: 0;
   padding: 0;
 }
-.widget ul {
+
+.wp-block-latest-posts li {
+  margin: 0.5rem 0;
+}
+.wp-block-latest-posts li a {
+  text-decoration: none;
+}
+
+.wp-block-archives {
   list-style-type: none;
-  margin: 1.125rem 0 0 0;
+  margin: 0;
   padding: 0;
 }
-.widget.widget_calendar #wp-calendar table {
-  border-collapse: collapse;
-  width: 100%;
+.wp-block-archives li {
+  margin: 0.5rem 0;
 }
-.widget.widget_calendar #wp-calendar tr:nth-of-type(odd) {
-  background: #eeeeee;
+.wp-block-archives li a {
+  text-decoration: none;
 }
-.widget.widget_calendar #wp-calendar th {
-  background: #000000;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
+
+.wp-block-categories {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.widget.widget_calendar #wp-calendar th,
-.widget.widget_calendar #wp-calendar td {
-  border: 0.063em solid #cccccc;
-  padding: 0.438em;
-  text-align: center;
+.wp-block-categories li {
+  margin: 0.5rem 0;
 }
-.widget.widget_calendar #wp-calendar {
-  border: 0.063em solid #cccccc;
-  margin-bottom: 0;
-  text-align: center;
-  width: 100%;
-}
-.widget.widget_calendar #wp-calendar a {
-  color: #000080;
-}
-.widget.widget_calendar #wp-calendar caption {
-  font-weight: 700;
-  margin: 5px 0;
-  text-align: center;
-}
-.widget.widget_calendar #wp-calendar #today {
-  background: #000000;
-  color: #ffffff;
-  font-weight: 700;
+.wp-block-categories li a {
+  text-decoration: none;
 }
