@@ -15,15 +15,10 @@
 		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'left-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
 				<?php
-					if ( have_posts() ) :
-						while ( have_posts() ) : the_post();
-							$engine->display( 'content/page'  );
-						endwhile;
+					while ( have_posts() ) : the_post();
+						$engine->display( 'content/page'  );
+					endwhile;
 						comments_template();
-						the_posts_pagination();
-					else :
-							Benlumia007\Backdrop\Template\get_template_part( 'content/content', 'none' );
-					endif;
 				?>
 			</main>
 			<?php Benlumia007\Backdrop\Theme\Sidebar\display( 'sidebar', [ 'primary' ] ); ?>

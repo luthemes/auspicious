@@ -332,28 +332,36 @@ h6 {
   }
 }
 @media screen and (min-width: 73.125rem) {
-  .single .content-area {
+  .error404 .content-area,
+.single .content-area {
     line-height: 1.8rem;
   }
-  .single .content-area .post {
+  .error404 .content-area .post,
+.single .content-area .post {
     background: #ffffff;
     border: 0.063em solid #cccccc;
     padding: 1.125em;
   }
-  .single .content-area .post .entry-header {
+  .error404 .content-area .post .entry-header,
+.single .content-area .post .entry-header {
     text-align: center;
   }
-  .single .content-area .post .entry-header .entry-title {
+  .error404 .content-area .post .entry-header .entry-title,
+.single .content-area .post .entry-header .entry-title {
     margin: 0;
     padding: 0;
   }
-  .single .content-area .post .entry-header .entry-metadata {
+  .error404 .content-area .post .entry-header .entry-metadata,
+.single .content-area .post .entry-header .entry-metadata {
     font-size: 0.875rem;
   }
-  .single .content-area .post .entry-header .entry-metadata .fa-user {
+  .error404 .content-area .post .entry-header .entry-metadata .fa-user,
+.single .content-area .post .entry-header .entry-metadata .fa-user {
     padding-right: 0.25rem;
   }
-  .single .content-area .post .entry-header .entry-metadata .fa-calendar-alt,
+  .error404 .content-area .post .entry-header .entry-metadata .fa-calendar-alt,
+.error404 .content-area .post .entry-header .entry-metadata .fa-comment,
+.single .content-area .post .entry-header .entry-metadata .fa-calendar-alt,
 .single .content-area .post .entry-header .entry-metadata .fa-comment {
     padding-left: 0.5rem;
     padding-right: 0.25rem;
