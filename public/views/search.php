@@ -16,6 +16,13 @@
 			<main id="main" class="content-area">
 				<?php
 					if ( have_posts() ) : ?>
+						<div class="search-header">
+							<?php printf(
+								'<h1 class="entry-title">%1$s %2$s</h1>',
+								esc_html__( 'Search for: ', 'amicable' ),
+								'<span class="search-result">' . get_search_query() . '</span>'
+							); ?>
+						</div>
 						<div class="loop">
 							<?php while ( have_posts() ) : the_post();
 									$engine->display( 'content/search'  );
