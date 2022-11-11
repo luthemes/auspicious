@@ -1,13 +1,27 @@
-@media screen and ( min-width: 1170px ) {
+@media screen and ( min-width: 1024px ) {
 	.left-sidebar {
 		.content-area {
 			float: right;
-			width: 68.376068376%;
+			width: 68.359375%;
 		}
 
 		.widget-area {
 			float: left;
-			width: 30.085470085%;
+			width: 29.8828125%;
+		}
+	}
+}
+
+@media screen and ( min-width: 1170px ) {
+	.left-sidebar {
+		.content-area {
+			float: right;
+			width: 72.307692307692308%;
+		}
+
+		.widget-area {
+			float: left;
+			width: 26.153846153846154%;
 		}
 	}
 }
