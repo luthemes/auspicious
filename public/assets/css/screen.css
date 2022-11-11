@@ -279,6 +279,9 @@ h6 {
     border: 0.063em solid #cccccc;
     padding: 1.125em;
   }
+  .blog .site-content .content-area .loop .post:first-child {
+    grid-column: span 3;
+  }
   .blog .site-content .content-area .loop .post .entry-header {
     text-align: center;
   }
