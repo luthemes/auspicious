@@ -17,7 +17,6 @@
 		<div class="entry-metadata">
 			<?php Benlumia007\Backdrop\Theme\Entry\display_author(); ?>
 			<?php Benlumia007\Backdrop\Theme\Entry\display_date(); ?>
-			<?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
 		</div>
 	</header>
 	<div class="entry-excerpt">

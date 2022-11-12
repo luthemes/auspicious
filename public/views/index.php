@@ -17,9 +17,11 @@
 				<?php
 					if ( have_posts() ) : ?>
 						<div class="loop">
-							<?php while ( have_posts() ) : the_post();
-									$engine->display( 'content', get_post_format()  );
-							endwhile; ?>
+							<div class="grid">
+								<?php while ( have_posts() ) : the_post();
+										$engine->display( 'content', get_post_format()  );
+								endwhile; ?>
+							</div>
 						</div>
 						<?php the_posts_pagination();
 					else :
