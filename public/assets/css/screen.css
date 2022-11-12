@@ -876,6 +876,23 @@ h6 {
   margin: 0.5rem 0;
 }
 
+.site-footer {
+  background: #000000;
+  padding: 1.125em;
+  text-align: center;
+}
+
+.site-footer,
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-info {
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+
 .comments-area {
   background-color: white;
   border: 0.063rem solid #cccccc;
