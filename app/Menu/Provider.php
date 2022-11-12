@@ -1,16 +1,16 @@
 <?php
 /**
- * Backdrop Core ( src/Tools/ServiceProvider.php )
+ * Menus.
  *
- * @package   Backdrop Core
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
- * @license   GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://getbenonit.com )
+ * Register Menus
+ *
+ * @package   Auspicious
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2019-2022 Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
+ * @link      https://github.com/benlumia007/auspicious
  */
 
-/**
- * Define namespace
- */
 namespace Auspicious\Menu;
 use Benlumia007\Backdrop\Support\ServiceProvider;
 use Auspicious\Menu\Component;
@@ -31,10 +31,10 @@ class Provider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->app->singleton( 'menu', Component::class );
+		$this->app->singleton( 'auspicious/menu', Component::class );
     }
     
     public function boot() {
-        $this->app->resolve( 'menu' )->boot();
+        $this->app->resolve( 'auspicious/menu' )->boot();
     }
 }
