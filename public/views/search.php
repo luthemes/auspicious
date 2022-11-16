@@ -19,7 +19,7 @@
 						<div class="search-header">
 							<?php printf(
 								'<h1 class="entry-title">%1$s %2$s</h1>',
-								esc_html__( 'Search for: ', 'amicable' ),
+								esc_html__( 'Search for: ', 'auspicious' ),
 								'<span class="search-result">' . get_search_query() . '</span>'
 							); ?>
 						</div>
